@@ -27,7 +27,7 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 
 # General parameters
-$UpdatePath       = "https://raw.githubusercontent.com/buesche87/PRTG.Veeam365Info/main/Veeam365Info-XML.ps1"
+$UpdatePath       = "https://raw.githubusercontent.com/buesche87/PRTG.VeeamM365Info/main/VeeamM365Info-XML.ps1"
 $nl               = [Environment]::NewLine
 $resultFolder     = "C:\Temp\VeeamResults"
 $resultxml        = "VeeamM365Info.xml"
