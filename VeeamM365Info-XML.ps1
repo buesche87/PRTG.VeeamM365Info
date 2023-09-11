@@ -14,7 +14,7 @@
 
     .NOTES
     Author  : Andreas Bucher
-    Version : 0.9.1
+    Version : 0.9.2
     Purpose : XML-Part of the PRTG-Sensor VeeamM365Info
 
     .EXAMPLE
@@ -109,9 +109,9 @@ function Set-XMLContent {
     $result+=   "  <value>$($VeeamInfos.ExpirationDays)</value>" + $nl
     $result+=   "  <CustomUnit>Days</CustomUnit>" + $nl
     $result+=   "  <LimitMinWarning>$ExpWarning</LimitMinWarning>" + $nl
-    $result+=   "  <LimitWarningMsg>Lizenz läuft in $($VeeamInfos.ExpirationDays) Tagen aus</LimitWarningMsg>" + $nl
+    $result+=   "  <LimitWarningMsg>Lizenz läuft aus</LimitWarningMsg>" + $nl
     $result+=   "  <LimitMinError>$ExpError</LimitMinError>" + $nl
-    $result+=   "  <LimitErrorMsg>Lizenz läuft in $($VeeamInfos.ExpirationDays) Tagen aus</LimitErrorMsg>" + $nl
+    $result+=   "  <LimitErrorMsg>Lizenz läuft aus</LimitErrorMsg>" + $nl
     $result+=   "  <LimitMode>1</LimitMode>" + $nl
     $result+=   "  <showChart>1</showChart>" + $nl
     $result+=   "  <showTable>1</showTable>" + $nl
