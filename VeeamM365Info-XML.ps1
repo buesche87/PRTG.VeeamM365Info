@@ -203,7 +203,7 @@ function Get-NewScript {
 }
 #-----------------------------------------------------------[Execute]------------------------------------------------------------
 # Autoupdate script
-Get-NewScript
+# Get-NewScript
 
 # Get license infos
 $License = Get-VBOLicense
