@@ -1,45 +1,45 @@
 ﻿<#
     .SYNOPSIS
-		This script opens a PS-Drive to check for XML files created through Veeam365Info-XML.ps1.
-		This Script is meant to be used as PRTG custom sensor.
+        This script opens a PS-Drive to check for XML files created through Veeam365Info-XML.ps1.
+        This Script is meant to be used as PRTG custom sensor.
 
     .PARAMETER HostName
-		HostName where the XML is located.
-		This parameter is mandantory.
+        HostName where the XML is located.
+        This parameter is mandantory.
 
     .PARAMETER UserName
-		UserName to connect to the server where the xml is located
-		This parameter is optional.
+        UserName to connect to the server where the xml is located
+        This parameter is optional.
 
     .PARAMETER Password
-		Password to connect to the server where the xml is located
-		This parameter is optional.
+        Password to connect to the server where the xml is located
+        This parameter is optional.
 
     .INPUTS
-		None
+        None
 
     .OUTPUTS
-		This script retrives an xml file and parses it to PRTG
+        This script retrives an xml file and parses it to PRTG
 
     .LINK
-		Disclamer: https://raw.githubusercontent.com/tn-ict/Public/master/Disclaimer/DISCLAIMER
+        Disclamer: https://raw.githubusercontent.com/tn-ict/Public/master/Disclaimer/DISCLAIMER
 
     .NOTES
-		Author:  Andreas Bucher
-		Version: 1.0.0
-		Date:    27.09.2023
-		Purpose: PRTG-Part of the PRTG-Sensor VeeamM365Info
+        Author:  Andreas Bucher
+        Version: 1.0.0
+        Date:    27.09.2023
+        Purpose: PRTG-Part of the PRTG-Sensor VeeamM365Info
 
     .EXAMPLE
-		-HostName '%host' -UserName '%windowsdomain\%windowsuser' -Password '%windowspassword'
-		
-		Create a Sensor in PRTG with the parameters above.
-		The %-parameters are retreived from the PRTG WebGUI.
+        -HostName '%host' -UserName '%windowsdomain\%windowsuser' -Password '%windowspassword'
+        
+        Create a Sensor in PRTG with the parameters above.
+        The %-parameters are retreived from the PRTG WebGUI.
 
-	.EXAMPLE
-		.\VeeamM365Info-PRTG.ps1 -HostName "Host" -UserName "domain\username" -Password "password"
-		
-		Try it standalone
+    .EXAMPLE
+        .\VeeamM365Info-PRTG.ps1 -HostName "Host" -UserName "domain\username" -Password "password"
+        
+        Try it standalone
 #>
 
 #----------------------------------------------------------[Declarations]----------------------------------------------------------
